@@ -1,7 +1,12 @@
+/* Global */
+
 *{
     font-family: Helvetica;
     box-sizing: border-box;
 }
+
+/* Navigation */
+
 .nav-left{
     display: flex;
     justify-content: space-around;
@@ -17,10 +22,6 @@
     gap: 2rem;
     padding: 1.5rem 1rem;
 }
-
-/* .title{
-    flex-basis: 50%;
-} */
 
 .title-style {
     color: #354463;
@@ -62,21 +63,6 @@
     color: inherit;
     text-decoration: none;
 }
-/* .hero-section-img{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 45rem;
-    padding: 2rem;
-     background-image: url(./assets/assets/home/annie-spratt-135307-unsplash@2xmobile.png);
-    background-size: cover;
-    background-size: 100% auto;
-background-position: center top;
-    background-repeat: no-repeat;   
-} */
-
-
 
 .stop-climate-change{
     align-self: flex-start;
@@ -98,18 +84,8 @@ background-position: center top;
     position: relative;
     margin-bottom: 3rem;
 }
-/* .hero-section-img{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    min-height: 45rem;
-    padding: 2rem;
-     background-image: url(./assets/assets/home/annie-spratt-135307-unsplash@2xmobile.png);
-    background-size: cover;
-    background-position: 80% center;
-    background-repeat: no-repeat;   
-} */
+
+/* Hero Section */
 
 .hero-section-img{
     display: flex;
@@ -185,27 +161,24 @@ background-position: center top;
     font-size: 0.8rem;
 }
 
+/* What We Do */
+
 .what-we-do-section{
     font-family: Helvetica, sans-serif;
     background-color: #354463;
     gap: 5rem;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
     padding: 3rem  0;
     align-content: space-between;
 }
 .what-we-do-title-content{
     text-align: center;
     padding: 0 3rem 3rem 3rem;
-    /* padding: 3rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
 }
 .what-we-do-title{
     width: 12rem;
@@ -236,7 +209,6 @@ background-position: center top;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* height: 30rem; */
     gap: 2rem;
     width: 85%;
     background-color: white;
@@ -266,16 +238,6 @@ background-position: center top;
     font-weight: bold;
     font-size: 1.5rem;
 }
-/* .what-we-do-card img{
-    top: -2.5rem;
-    position: absolute;
-    left: 10%;
-    height: 12rem;
-    width: 17rem;
-
-    
-} */
-
 .what-we-do-card img{
     position: absolute;
     top: -2.5rem;
@@ -284,6 +246,8 @@ background-position: center top;
     height: 12rem;
     width: 17rem;
 }
+
+/* Climate Change */
 
 .climate-change-section{
     color: #354463;
@@ -375,6 +339,8 @@ background-position: center top;
     border-radius: 2rem;
 }
 
+/* Stories */
+
 .stories-section{
     font-family: Helvetica, sans-serif;
     padding: 5rem 0rem 5rem 0rem;
@@ -394,14 +360,6 @@ background-position: center top;
     height: 20rem;
     background-repeat: no-repeat;
 }
-/* .stories-section-image{
-    background-image: url(./assets/assets/home/lady-baby.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 85%;
-    height: 20rem;
-} */
 .stories-section-content{
     color: white;
     padding: 2rem;
@@ -410,7 +368,6 @@ background-position: center top;
     line-height: 2rem;
     text-align: center;
     width: 85%;
-    /* height: 22rem; */
     background-color: #354463;
     display: flex;
     flex-wrap: wrap;
@@ -424,6 +381,9 @@ background-position: center top;
     font-weight: 250;
     text-align: center;
 }
+
+/* Events */
+
 .events-section{
     background-color: #354463;
     color: white;
@@ -489,6 +449,17 @@ background-position: center top;
     align-items: center;
     gap: 2rem;
 }
+.event-card-main-content{
+    position: relative;
+}
+
+.event-card-main-content .title-card{
+    left: 0;
+    top: -4rem;
+    transform: none;
+}
+
+/* Subscribe */
 
 .subscribe-section{
     width: 100%;
@@ -540,6 +511,8 @@ background-position: center top;
 
 }
 
+/* Footer */
+
 .contact-us-section{
     font-family: Helvetica, sans-serif;
     display: flex;
@@ -579,18 +552,17 @@ background-position: center top;
     text-underline-offset: 0.1rem;
 }
 .contact-us-section .stop-climate-change{
-    /* display: flex; */
+    flex-basis: auto;
     padding: 2rem;
     justify-content: flex-end;
     color: #354463;
 }
+
 .contact-us-addr{
     width: 11rem;
 }
 
-/* .footer .stop-climate-change{
-    color: #354463;
-} */
+/* Tablet */
 
 @media (min-width: 768px) {
 
@@ -683,20 +655,6 @@ background-position: center top;
         font-size: 1.5rem;
     } 
 
-    /* .climate-change-section{
-    font-family: Helvetica, sans-serif;
-    background-image: url(./assets/assets/home/Did-you-know-background-mobile.png);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    box-sizing: border-box;
-} */
  .climate-change-section{
         background-image: url(./assets/assets/home/Did\ you\ know\ background@2x-tablet.png);
         display: flex;
@@ -709,30 +667,7 @@ background-position: center top;
         flex-direction: column;
         width: 90%;
         gap: 2rem;
-    }     
-    /* .stories-section-content{
-        color: white;
-        padding: 2rem;
-        font-weight: bold;
-        font-size: 1.7rem;
-        line-height: 2rem;
-        text-align: center;
-        width: 85%;
-        background-color: #354463;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: space-between;
-        gap: 2rem;
-        
-    }   */
-    /* .stories-section-content{
-        margin-left: 10%;
-            position: relative;
-    }
-    .stories-section-image{
-        z-index: 1;
-    } */
+    }   
     .stories-section{
         position: relative;
         padding: 5rem;
@@ -741,7 +676,6 @@ background-position: center top;
 
     .stories-section-image{
         position: relative;
-        /* width: 80%; */
         height: 30rem;
         margin-right: auto;
         margin-bottom: 4rem;
@@ -788,19 +722,13 @@ background-position: center top;
         margin-left: 6rem;
         color: #354463;
     }
-    /* .events-card{
-        width: 100%;
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-    } */
     .events-card{
         flex-direction: row;
         justify-content: start;
 
+    }
+    .events-card:nth-child(3){
+        flex-direction: row-reverse;
     }
     .events-section{
         padding: 3rem;
@@ -839,8 +767,7 @@ background-position: center top;
     }
 }
 
-
-
+/* Desktop */
 
 @media (min-width: 1200px) {
     .nav-bar{
@@ -955,8 +882,11 @@ background-position: center top;
         margin-right: 0;
     }
     .stories-section .readmore{
-        margin-left: 0;
-        margin-top: 0;
+        position: absolute;
+        left: 12rem;
+        top: 48rem;
+        z-index: 5;
+        margin: 0;
     }
     .stories-section-content{
         justify-content: flex-start;
@@ -965,7 +895,6 @@ background-position: center top;
         top: 23rem;
         left: 12rem;
         width: 35%;
-        /* height: 35%; */
     }
 
     .stories-section-content-author{
@@ -977,7 +906,6 @@ background-position: center top;
         align-items: start;
         justify-content: start;
     }
-    
     .events-section-title{
         font-size: 5rem;
         text-align: left;
